@@ -1,13 +1,18 @@
 from django.shortcuts import render
 
-def store(request):
+def main(request):
 	context = {}
-	return render(request, 'store/store.html', context)
+	return render(request, 'store/main.html', context)
 
-def cart(request):
+def mens(request):
 	context = {}
-	return render(request, 'store/cart.html', context)
+	return render(request, 'store/mens.html', context)
 
-def checkout(request):
+def home(request):
 	context = {}
-	return render(request, 'store/checkout.html', context)
+	return render(request, 'store/home.html', context)
+
+def Contact(request):
+	context = {}
+	return render(request, 'store/Contact.html', context)
+
